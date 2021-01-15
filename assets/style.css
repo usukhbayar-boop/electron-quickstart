@@ -1,0 +1,38 @@
+body {
+  background: url("../images/nature.jpeg");
+}
+
+.num {
+  border: 1px solid red;
+  padding: 10px;
+  font-size: 20px;
+  background-color: white;
+}
+
+.spe {
+  border: 1px solid lightblue;
+  padding: 10px;
+  background-color: lightgrey;
+  font-size: 20px;
+}
+
+.num:hover {
+  border: 1px solid crimson;
+  background-color: lightgray;
+}
+
+.spe:hover {
+  border: 1px solid green;
+  background-color: whitesmoke;
+}
+
+.table {
+  height: 500px;
+  width: 350px;
+}
+
+.display {
+  border: 2px solid gray;
+  font-size: 45px;
+  background-color: white;
+}

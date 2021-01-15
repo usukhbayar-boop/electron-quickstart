@@ -1,0 +1,16 @@
+{
+  "name": "electron_quickstart",
+  "version": "1.0.0",
+  "description": "My electron app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "Usukhbayar",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "electron": "^11.2.0"
+  }
+}

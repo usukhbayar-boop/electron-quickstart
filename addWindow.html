@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Арын зураг солих</title>
+    <link rel="stylesheet" href="./assets/addWindow.css" />
+  </head>
+  <body>
+    <h1>Зураг солих</h1>
+    <ul class="ul">
+      <li>nature.jpeg</li>
+      <li>sea.jpg</li>
+      <li>summit.jpg</li>
+      <li>zebra.jpg</li>
+    </ul>
+
+    <button class="btn">Баталгаажуулах</button>
+  </body>
+  <script>
+    const electron = require("electron");
+    const { ipcRenderer } = electron;
+    const ul = document.querySelector(".ul");
+    ul.addEventListener("click", submitForm);
+    function submitForm(e) {
+      const item = e.target.textContent;
+      ipcRenderer.send("img:change", item);
+    }
+
+  </script>
+</html>
